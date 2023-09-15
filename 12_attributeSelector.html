@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+      a[target="_blank"] {
+        /* a 태그 안에 target속성에 스타일을 준다 */
+        font-weight: 700;
+        font-size: 30px;
+        color: violet;
+      }
+      a[class] {
+        font-weight: 700;
+        /* font-size: 40px; */
+        color: orange;
+        box-shadow: -5px 5px 20px lightgray;
+      }
+      a[class~=flat] {
+        /* a 태그의 class 속성 값 중에서 flat단어가 포함되어 있는 요소 */
+        font-size: 50px;
+      }
+      a[class^=b] {
+        color:bisque;
+        background-color: lightgoldenrodyellow;
+      }
+      a[class$=r] {
+        color:yellowgreen;
+      }
+      </style>
+  </head>
+  <body>
+    <h1>WEB의 프론트 기술</h1>
+    <ul class="firstUl">
+      <li><a href="https://en.wikipedia.org/wiki/HTML" class="flat">HTML</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/JavaScript" class="button">JavaScript</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/JQuery" class="tanker">JQuery</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ajax" class="flat">Ajax</a></li>
+    </ul>
+    <ul>
+      <li>
+        <input type="radio" name="subway" id="subHalf" >
+        <label for="subHalf">Subway Half</label>
+      </li>
+      <li>
+        <input type="radio" name="subway" id="subLong" checked>
+        <label for="subLong">Subway Foot Long</label>
+      </li>
+    </ul>
+  </body>
+</html>
