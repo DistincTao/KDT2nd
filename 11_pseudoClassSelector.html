@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사 클래스 선택자</title>
+    <style>
+      /* :link {
+      :visited
+      :hover
+      :active
+      :focus  
+      } */
+      li:hover {
+        background-color: yellow;
+      }
+      a:visited {
+        color: magenta;
+      }
+      h1::first-letter {
+        font-size: 40px;
+        color: brown;
+      }
+      .firstUl li:nth-child(odd){
+        border: 2px dotted blue;
+      }
+      .firstUl li:nth-child(even){
+        border: 2px dashed red;
+      }
+      input:checked + label {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WEB의 프론트 기술</h1>
+    <ul class="firstUl">
+      <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/JQuery">JQuery</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ajax">Ajax</a></li>
+    </ul>
+    <ul>
+      <li>
+        <input type="radio" name="subway" id="subHalf" >
+        <label for="subHalf">Subway Half</label>
+      </li>
+      <li>
+        <input type="radio" name="subway" id="subLong" checked>
+        <label for="subLong">Subway Foot Long</label>
+      </li>
+    </ul>
+  </body>
+</html>
