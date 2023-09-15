@@ -1,3 +1,13 @@
-p {
-  border: 1px solid violet;
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import "variable.css";
+
+body {
+  font-family: 'Gamja Flower', cursive;
+}
+h1 {
+  color: blue;
+}
+.mainTitle {
+  background-color: var(--blue);
+  border: var(--main-border);
 }
