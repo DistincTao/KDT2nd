@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+      }
+      .vertical-baseline img {
+        vertical-align: baseline; /* default 값 */
+      }
+      .vertical-middle img {
+        vertical-align: middle;
+      }
+      .vertical-bottom img {
+        vertical-align: bottom;
+      }
+      .vertical-top img {
+        vertical-align: top;
+      }
+      p .base-text {
+        background-color: tomato;
+      }
+      p .bedge {
+        background-color: orange;
+        color: #fff;
+        font-size: 0.3em;
+        vertical-align: top;
+        padding: 0.2em 0.8em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>요소의 세로 정렬</h1>
+    <p class="vertical-baseline">
+      <span>Vertical-align</span>
+      <img src="img/mung.jpg" alt="mung">
+    </p>
+    <p class="vertical-middle">
+      <span>Vertical-align</span>
+      <img src="img/mung.jpg" alt="mung">
+    </p>
+    <p class="vertical-bottom">
+      <span>Vertical-align</span>
+      <img src="img/mung.jpg" alt="mung">
+    </p>
+    <p class="vertical-top">
+      <span>Vertical-align</span>
+      <img src="img/mung.jpg" alt="mung">
+    </p>
+    <p>
+      <span class="base-text">Vertical-align</span>
+      <span class="bedge">TOP</span>
+    </p>
+  </body>
+</html>
