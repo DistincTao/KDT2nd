@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/acb94ab00c.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        background: url(img/lighthouse.jpg);
+      }
+      .container {
+        width: 900px;
+        height: 80px;
+        background-color: rgba(92, 130, 168, 0.5) ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .items {
+        width: 200px;
+        height: 60px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 15px;
+      }
+      .items:hover {
+        background-color: #8A9FB2;
+        color: yellow;
+      }
+      .clear::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container clear">
+      <div class="items calender" onmouseover="appear()" onmouseout="disappear()">
+        <i class="fa-regular fa-calendar-days fa-lg"></i>
+        <span>Calendar</span>
+      </div>
+      <div class="items user">
+        <i class="fa-solid fa-user fa-lg"></i>
+        <span>User</span>
+      </div>  
+      <div class="items comment">
+        <i class="fa-regular fa-comment fa-lg"></i>
+        <span>Comment</span>
+      </div>
+      <div class="items smile">
+        <i class="fa-solid fa-face-smile fa-lg"></i>
+        <span>Smile</span>
+      </div>
+    </div>
+    <img id="img" src="img/IU.jpg">
+    <script>
+      let img = document.getElementById("img")
+      function appear() {
+        img.style.display = "block";
+      }
+      function disappear() {
+        img.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
