@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p {
+        width: 500px;
+        height: 100px;
+        background-color: brown;
+      }
+      #static {
+        position: static;
+      }
+      #relative-1 {
+        position: relative;
+        opacity: 0.5;
+      }
+      #relative-2 {
+        position: relative;
+        left: 100px; /* 왼쪽에서 100px 떨어지도록 위치를 잡기 */
+        top: -50px; /* + : 흐름의 방향대로 / - : 아래쪽(반대) 방향으로*/
+      }
+      #fixed {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        right: 30px;
+        /* top: 30px; */
+        bottom: 30px;
+        /* left: 30px; */
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="static">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque natus nihil provident omnis minus quia molestiae, soluta facilis repudiandae maxime at aliquid nisi. Adipisci facere consectetur ea architecto modi beatae.
+    </p>    
+    <p id="relative-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam consequuntur, saepe alias numquam soluta nobis impedit quidem optio nesciunt explicabo aspernatur voluptatum nemo repellat recusandae quibusdam libero eius voluptatem.
+    </p>    
+    <p id="relative-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquam consequuntur, saepe alias numquam soluta nobis impedit quidem optio nesciunt explicabo aspernatur voluptatum nemo repellat recusandae quibusdam libero eius voluptatem.
+    </p>    
+    <p id="fixed"></p>    
+  </body>
+</html>

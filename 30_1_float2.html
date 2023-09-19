@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear 속성을 사용한 예제</title>
+    <style>
+      .left {
+        width: 150px;
+        height: 50px;
+        background-color: brown;
+        color: white;
+        float: left;
+      }
+      .right {
+        width: 150px;
+        height: 50px;
+        background-color: blueviolet;
+        color: white;
+        float: right;
+      }
+      p {
+        clear: both;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>clear 속성을 이용한 float 해제</h1>
+    <div>
+      <div class="left">왼쪽 끝 요소</div>
+      <div class="right">오른쪽 끝 요소</div>
+    </div>
+    <p>이 글자는 어디로 갈까요?  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, voluptate mollitia omnis animi maxime deleniti accusantium! Unde et labore ipsa laboriosam, at doloribus qui, amet numquam, aut delectus officia nesciunt?</p>
+  </body>
+</html>

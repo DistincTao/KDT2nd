@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" mbti="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container {
+        max-width:800px;
+        height: 350px;
+        padding: 30px;
+        border: 3px solid turquoise;
+        background-color: bisque;
+      }
+      .header h1 {
+        margin: 0 0 10px;
+        height: 100px;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 100px;
+      }
+      p {
+        box-sizing: border-box;
+        padding: 15px 25px;
+        text-align: justify;
+        background-color: darkkhaki;
+      }
+      #mbtiT {
+        float: left;
+        width: 47%;
+        border: 3px solid black;
+      }
+      p {
+        font-weight: bold;
+      }
+      #mbtiF {
+        float: right;
+        width: 47%;
+        border: 3px solid black;
+      }
+      .mbti::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+       <h1> MBTI의 T와 F의 차이</h1>
+      <div class="mbti">
+        <p id="mbtiT">
+          T <br>
+          객관적 사실 중시<br>
+          원칙과 규범 중시<br>
+          논리적이고 분석적<br>
+          맞다 혹은 틀리다 식의 흑백 사고<br>
+          진실이 중요<br>
+          사람에게 무관심한 사람으로 보일 수 있음<br>
+          <br>
+        </p>
+        <p id="mbtiF">
+          F <br>
+          상황적 특성 중시<br>
+          정서적인 측면 중시<br>
+          사실보다는 상황으로 판단<br>
+          좋다 나쁘다 식의 흑백사고<br>
+          진실보다는 감정이 중요<br>
+          진실을 말하기를 어려워함<br>
+          동정심이 강함
+        </p>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ea ad nemo impedit dignissimos omnis et a voluptas, dolores autem dolorum tenetur molestiae doloremque quibusdam nostrum eligendi voluptatum ab. Doloremque.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div.overflow {
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+        overflow: auto;
+      }
+      div.ellipse {
+        width: 200px;
+        height: 200px;
+        background-color: cornflowerblue;
+        overflow: hidden; 
+        /* 100px 넘는 내용을 보이지 않게 처리 */
+        text-overflow: ellipsis;
+        white-space: pre;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overflow">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quia repudiandae error dolore non officiis ea, ad quo aperiam qui harum, excepturi placeat id, suscipit explicabo sunt quasi dignissimos eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo earum magni non inventore, natus sunt, ullam laudantium eum ducimus qui. Ipsa minus inventore, doloribus repellendus nostrum adipisci numquam praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corporis eligendi dolore libero facere dicta nam placeat unde atque, dolores alias, id consequuntur magnam. Molestias ipsam asperiores optio quam?
+    </div>
+    <div class="ellipse">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam quia repudiandae error dolore non officiis ea, ad quo aperiam qui harum, excepturi placeat id, suscipit explicabo sunt quasi dignissimos eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quo earum magni non inventore, natus sunt, ullam laudantium eum ducimus qui. Ipsa minus inventore, doloribus repellendus nostrum adipisci numquam praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corporis eligendi dolore libero facere dicta nam placeat unde atque, dolores alias, id consequuntur magnam. Molestias ipsam asperiores optio quam?
+    </div>
+  </body>
+</html>

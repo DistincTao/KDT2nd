@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  background: url(../img/lighthouse.jpg);
+  width: 600px;
+  height: 3000px;
+  margin: 0 auto;
+  position: relative;
+}
+h1 {
+  color: white;
+  position: absolute;
+  left: 100px;
+  bottom: 70px;
+  text-shadow: 3px 3px 10px green;
+}
+h2 {
+  color: cyan;
+  position: absolute;
+  /* right: 100px; */
+  top: 100px;
+  left: 100px;
+  /* bottom: 40px; */
+  text-shadow: 3px 3px 10px green;
+}
+img {
+  width: 30px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
