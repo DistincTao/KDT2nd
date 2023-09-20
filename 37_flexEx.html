@@ -36,39 +36,50 @@
         clear: both;
         display: block;
       }
-      img {
-        display: none;
+      .imgs {
+        width: 900px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .img {
+        margin: 20px;
+        /* display: none; */
       }
     </style>
   </head>
   <body>
     <div class="container clear">
-      <div class="items calender" onmouseover="appear()" onmouseout="disappear()">
+      <div class="items calender" onmouseover="appear(0)" onmouseout="disappear(0)">
         <i class="fa-regular fa-calendar-days fa-lg"></i>
         <span>Calendar</span>
       </div>
-      <div class="items user">
+      <div class="items user" onmouseover="appear(1)" onmouseout="disappear(1)">
         <i class="fa-solid fa-user fa-lg"></i>
         <span>User</span>
       </div>  
-      <div class="items comment">
+      <div class="items comment" onmouseover="appear(2)" onmouseout="disappear(2)">
         <i class="fa-regular fa-comment fa-lg"></i>
         <span>Comment</span>
       </div>
-      <div class="items smile">
+      <div class="items smile" onmouseover="appear(3)" onmouseout="disappear(3)">
         <i class="fa-solid fa-face-smile fa-lg"></i>
         <span>Smile</span>
       </div>
     </div>
-    <img id="img" src="img/IU.jpg">
+    <div class="imgs">
+      <img class="img" src="img/IU.jpg">
+      <img class="img" src="img/IU2.jpg">
+      <img class="img" src="img/IU3.jpg">
+      <img class="img" src="img/IU4.jpg">
+    </div>
     <script>
-      let img = document.getElementById("img")
-      function appear() {
-        img.style.display = "block";
+      let img = document.getElementsByClassName("img")
+      function appear(i) {
+        img[i].style.display = "block";
       }
-      function disappear() {
-        img.style.display = "none";
-      }
+      // function disappear(i) {
+      //   img[i].style.display = "none";
+      // }
     </script>
   </body>
 </html>
